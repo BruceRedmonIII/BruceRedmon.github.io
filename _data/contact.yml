@@ -4,7 +4,8 @@
   icon: "fab fa-github"
 
 - type: facebook
-  icon: "fa-brands fa-square-facebook"
+  icon: "fab fa-facebook-square"
+  url: "https://www.facebook.com/BruceRedmonIII"
 
 - type: email
   icon: "fas fa-envelope"
