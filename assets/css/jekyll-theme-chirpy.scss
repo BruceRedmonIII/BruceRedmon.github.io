@@ -1,0 +1,60 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+.ttt-board {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(3, 50px);
+  gap: 1px;
+  margin: 10px 0;
+}
+.box {
+  background-color: var(--ttt-board-bg-color);
+  border: 2px solid var(--ttt-board-border-color);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  height: 50px;
+}
+.box:hover { background-color: #c5c5c5; }
+.bitboard {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(3, 40px);
+  gap: 1px;
+  margin: 5px 0;
+}
+.bit {
+  background-color: var(--ttt-board-bg-color);
+  border: 2px solid var(--ttt-board-border-color);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+}
+.descriptor { margin-top: 15px; font-weight: bold; }
+#status { margin-top: 15px; font-weight: bold; }
+#reset-btn { padding: 8px 16px; cursor: pointer; }
+
+.bitboard-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.bitboard-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* optional: centers labels above boards */
+}
