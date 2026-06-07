@@ -67,8 +67,8 @@
   --btn-share-hover-color: #bfc1ca;
   --card-bg: #1e1e1e;
   --card-hover-bg: #464d51;
-  --card-shadow: rgb(21 21 21 / 72%) 0 6px 18px 0,
-    rgb(137 135 135 / 24%) 0 0 0 1px;
+  --card-shadow:
+    rgb(21 21 21 / 72%) 0 6px 18px 0, rgb(137 135 135 / 24%) 0 0 0 1px;
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
   --kbd-bg-color: #242424;
@@ -111,11 +111,6 @@
   --clipboard-checked-color: #2bcc2b;
   --filepath-text-color: #cacaca;
 
-  /* Tic-Tac-Toe Bitboard Demos*/
-  --ttt-board-text-color: rgb(255, 255, 255);
-  --ttt-board-bg-color: rgb(0, 0, 0);
-  --ttt-board-border-color: rgb(255, 255, 255);
-  --bitboard-text-color: rgb(203, 203, 203);
   .light {
     display: none;
   }

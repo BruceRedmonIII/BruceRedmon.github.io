@@ -1,21 +1,21 @@
-<div class="Descriptor" id="status-demo-2">Player X's turn</div>
+<div class="status" id="status-demo-2">Player X's turn</div>
 <div class="ttt-board" id="game-board-demo-2"></div>
 <div class="bitboard-row">
-    <div class="bitboard-col">
-        <div class="Descriptor">Occupied</div>
-        <div class="bitboard" id="occupied-bitboard-demo-2"></div>
-    </div>
-    <h3 class="Descriptor" style="padding-top: 50px; text-align: center;">AND</h3>
-    <div class="bitboard-col">
-        <div class="Descriptor">X Board Reversed</div>
-        <div class="bitboard" id="x-bitboard-demo-2"></div>
-    </div>  
-    <h3 class="Descriptor" style="padding-top: 50px; text-align: center;">=</h3>
-    <div class="bitboard-col">
-        <div class="Descriptor">O Board</div>
-        <div class="bitboard" id="o-bitboard-demo-2"></div>
-    </div>
+  <div class="bitboard-col">
+    <div class="Descriptor">Occupied</div>
+    <div class="bitboard" id="occupied-bitboard-demo-2"></div>
+  </div>
+  <div class="Descriptor" style="padding-top: 85px; text-align: center;">AND</div>
+  <div class="bitboard-col">
+    <div class="Descriptor">X Board Reversed</div>
+    <div class="bitboard" id="x-bitboard-demo-2"></div>
+  </div>
+  <div class="Descriptor" style="padding-top: 85px; text-align: center;">=</div>
+  <div class="bitboard-col">
+    <div class="Descriptor">O Board</div>
+    <div class="bitboard" id="o-bitboard-demo-2"></div>
+  </div>
 </div>
-<button id="reset-btn-demo-2">Restart Game</button>
+<button class="reset-btn" id="reset-btn-demo-2">Restart Game</button>
 
 <script type="module" src="{{ 'assets/js/bbdemos/ttt-demo-2.js' | relative_url }}"></script>
