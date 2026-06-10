@@ -17,6 +17,7 @@
   --ttt-board-border-color: black;
   --ttt-board-highlight-color: rgb(154, 154, 154);
   --bitboard-text-color: rgb(44, 44, 44);
+  --noise-canvas-border-color: rgb(44, 44, 44);
 }
 
 html[data-mode='dark'] {
@@ -25,6 +26,7 @@ html[data-mode='dark'] {
   --ttt-board-border-color: white;
   --ttt-board-highlight-color: rgb(100, 100, 100);
   --bitboard-text-color: rgb(203, 203, 203);
+  --noise-canvas-border-color: rgb(203, 203, 203);
 }
 
 .ttt-board {
@@ -93,4 +95,8 @@ html[data-mode='dark'] {
   display: flex;
   flex-direction: column;
   align-items: center; /* optional: centers labels above boards */
+}
+.noise-canvas {
+  border: 2px solid var(--noise-canvas-border-color);
+  margin-top: 20px;
 }

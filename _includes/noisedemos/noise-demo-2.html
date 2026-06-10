@@ -1,0 +1,27 @@
+<div class="bitboard-row">
+  <div class="bitboard-col">
+    <div class="descriptor">Random Noise</div>
+    <canvas class="noise-canvas" id="randomNoiseCanvas-2" width="200" height="200"></canvas>
+  </div>
+  <div class="bitboard-col">
+    <div class="descriptor">Value Noise</div>
+    <canvas class="noise-canvas" id="valueNoiseCanvas-2" width="200" height="200"></canvas>
+  </div>
+</div>
+<div class="bitboard-row">
+  <div class="bitboard-col">
+    <div class="descriptor">Perlin Noise (Gradient)</div>
+    <canvas class="noise-canvas" id="perlinNoiseCanvas-2" width="200" height="200"></canvas>
+  </div>
+  <div class="bitboard-col">
+    <div class="descriptor">Simplex Noise (Gradient)</div>
+    <canvas class="noise-canvas" id="simplexNoiseCanvas-2" width="200" height="200"></canvas>
+  </div>
+</div>
+<div class="input-group">
+  <label for="seedInput-2">Seed: </label>
+  <input type="number" id="seedInput-2" value="12345">
+  <button id="generateButton-2">Generate Noise</button>
+</div>
+
+<script type="module" src="{{ 'assets/js/noisedemos/noise-demo-2.js' | relative_url }}"></script>

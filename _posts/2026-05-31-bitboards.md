@@ -39,7 +39,7 @@ Each mask is easily adjustable, storable, and able to be set before the program 
 
 ## Under the Hood
 ___
-While I provided nice visual representations for each demo, the actual code itself is a bit harder to follow. This is because the bits we set actually translatw from binary into readable integers. Below is what our win condition masks actually look like
+While I provided nice visual representations for each demo, the actual code itself is a bit harder to follow. This is due to the bitboards being written as binary as opposed to converted data types or classes. Below is what our win condition masks actually look like
 ```js
 const winConditions = [
     0b000000111, // Row 1
@@ -52,3 +52,8 @@ const winConditions = [
     0b001010100  // Diagonal /
 ];
 ```
+Any form of bitmasking will look similar to the above, just maybe a bit larger depending on the amount of bits you actually need to use. In many cases you may actually need to use hexadecimal instead of binary, which can be even more difficult to read when looking at the raw code. I highly recommend before ever attempting to use bitboards at any degree, to first instantiate heavy debugging tools as well as a unit test system in order to fully understand what is happening without needing to make assumptions. For example, when implementing this in my Chess engine where I used Monte Carlo Tree Search to try and make a decent chess AI, I had 1344 bitboards in constant memory, while storing 140 for the game state itself. At that magnitude of complexity, it is virtually impossible to manually debug issues that occur or to power through many of the problems you will face along the way. 
+
+## Conclusion
+___
+While bitboards can be difficult to use and understand, they are one of the very few solutions for extreme performance. Despite having 140 boards for my Chess gamestate, I could simulate 100,000 entire games of chess in ~8 seconds on mid-tier hardware, as well as use all of the information gained from those games, to determine the next move my AI should make. I highly recommend anyone that wants to attempt a boardgame AI to not only take the time to fully understand the concept, but also progress slowly through each problem and really spend time on debugging and proper documentation of what it is that your doing in order to not get lost in the world that is bitboards. 

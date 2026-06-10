@@ -1,0 +1,33 @@
+<div class="bitboard-row">
+  <div class="bitboard-col">
+    <div class="descriptor">Value Noise</div>
+    <canvas class="noise-canvas" id="valueNoiseCanvas-3" width="200" height="200"></canvas>
+    <div class="input-group">
+      <label for="value-noise-octaves-3">Octaves: </label>
+      <input type="number" id="value-noise-octaves-3" value="8" min="1" max="8">
+    </div>
+  </div>
+  <div class="bitboard-col">
+    <div class="descriptor">Perlin Noise (Gradient)</div>
+    <canvas class="noise-canvas" id="perlinNoiseCanvas-3" width="200" height="200"></canvas>
+    <div class="input-group">
+      <label for="perlin-noise-octaves-3">Octaves: </label>
+      <input type="number" id="perlin-noise-octaves-3" value="8" min="1" max="8">
+    </div>
+  </div>
+  <div class="bitboard-col">
+    <div class="descriptor">Simplex Noise (Gradient)</div>
+    <canvas class="noise-canvas" id="simplexNoiseCanvas-3" width="200" height="200"></canvas>
+    <div class="input-group">
+      <label for="simplex-noise-octaves-3">Octaves: </label>
+      <input type="number" id="simplex-noise-octaves-3" value="8" min="1" max="8">
+    </div>
+  </div>
+</div>
+<div class="input-group">
+  <label for="seedInput-3">Seed: </label>
+  <input type="number" id="seedInput-3" value="12345">
+  <button id="generateButton-3">Generate Noise</button>
+</div>
+
+<script type="module" src="{{ 'assets/js/noisedemos/noise-demo-3.js' | relative_url }}"></script>
